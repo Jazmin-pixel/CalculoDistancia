@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculoDistancia.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label Text="Cálculo de Distancia entre 2 Puntos" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="Punto 1 (P1)" FontAttributes="Bold" Margin="0,10,0,0" />
+            <Entry x:Name="x1Entry" Placeholder="X1" Keyboard="Numeric" />
+            <Entry x:Name="y1Entry" Placeholder="Y1" Keyboard="Numeric" />
+
+            <Label Text="Punto 2 (P2)" FontAttributes="Bold" Margin="0,10,0,0" />
+            <Entry x:Name="x2Entry" Placeholder="X2" Keyboard="Numeric" />
+            <Entry x:Name="y2Entry" Placeholder="Y2" Keyboard="Numeric" />
+
+            <Button x:Name="calcButton" 
+                    Text="Calcular Distancia" 
+                    Clicked="OnCalcularClicked" 
+                    Margin="0,15,0,0" />
+
+            <Label x:Name="resultadoLabel" 
+                   Text="Distancia: -" 
+                   FontSize="18" 
+                   FontAttributes="Bold" 
+                   TextColor="Blue" 
+                   HorizontalOptions="Center" 
+                   Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
